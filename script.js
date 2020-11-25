@@ -65,7 +65,7 @@ console.log(typeof ageJohn);
 
 
  /********************** Operator Precedence ************************/
-
+/*
  var now = 2018;
  var yearJohn = 1989;
  var fullAge = 18;
@@ -95,3 +95,13 @@ console.log(x);
 x = x + 1;
 x +=1;
 x++;
+*/
+/*************************BMI***********************/
+var markHeight = 1.80;
+var johnHeight = 1.75;
+var markWeight = 70;
+var johnwegiht = 60;
+var markBmi = markWeight/(markHeight*markHeight);
+var johnBmi = johnwegiht/(johnHeight*johnHeight);
+var bmi = markBmi > johnBmi;
+console.log("Is Mark's BMI greater than John's BMI ? "+ bmi);
