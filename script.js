@@ -42,6 +42,7 @@ console.log(firstName + " " +lastName);
 /******************** Basic Operators *****************************/
 
 // Maths operators
+/*
 var now, ageJohn, ageJames;
 ageJohn = 28;
 ageJames = 33;
@@ -60,3 +61,37 @@ console.log(typeof older);
 console.log(typeof ageJohn);
  var x;
  console.log(typeof x);
+ */
+
+
+ /********************** Operator Precedence ************************/
+
+ var now = 2018;
+ var yearJohn = 1989;
+ var fullAge = 18;
+
+//Multiple operators
+ var isFullAge = now - yearJohn >= fullAge;
+ console.log(isFullAge);
+
+//Grouping
+var ageJohn = now - yearJohn;
+var ageJames = 35;
+var average = (ageJames + ageJohn)/2;
+console.log(average);
+
+//Multiple Assignments
+// (right to left)
+var x, y;
+x = y = (3 + 5) * 4 - 6; 
+console.log(x, y);
+
+//More Operators
+// x = x*2;
+x *= 2;
+console.log(x);
+x +=10;
+console.log(x);
+x = x + 1;
+x +=1;
+x++;
