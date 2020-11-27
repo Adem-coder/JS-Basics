@@ -179,7 +179,7 @@ switch (true){
 }
 */
 /*****************Truthy and Falsy Values and Equality Operators*************************/
-
+/*
 // var height;
 var height = 23;
 if (height || height === 0){
@@ -191,4 +191,30 @@ if (height || height === 0){
 // Equality Operators
 if (height == 23){
     console.log('The == operator does type coercion!');
+}
+*/
+/***************Averages and if else statments*******************/
+
+var john = (89 + 120 + 103) / 3;
+var mike = (116 + 94 + 123) / 3;
+var marry = (97 + 134 + 105) / 3;
+console.log(john, mike , marry);
+if (john > mike && john > marry){
+    console.log('John is the winner of the games with score of '+ john +".");
+}else if (mike > marry && mike > john){
+    console.log('Mike is the winner of the games with score of '+ mike +".");  
+}else if (marry> john && marry > mike){
+    console.log ('Marry\'s team wins with '+ marry + ' points.')
+}else{
+    console.log('There is a draw.');
+}
+
+
+if (john > mike){
+    console.log('John is the winner of the games with score of '+ john +".");
+}else if (mike> john){
+    console.log('Mike is the winner of the games with score of '+ mike +".");
+ 
+}else{
+    console.log('There is a draw.');
 }
