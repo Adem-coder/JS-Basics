@@ -127,7 +127,7 @@ if (isMarried){
 */
 
 /**************************** Boolean Logic *******************************/
-
+/*
 var firstName = "John";
 var age = 16;
 if (age < 13 ){
@@ -138,4 +138,42 @@ if (age < 13 ){
     console.log(firstName + ' is a young man.');
 }else{
     console.log(firstName + ' is a man.');
+}
+*/
+
+/*******************The Ternary Operator and Switch Statement******************/
+
+// The Ternary Operator
+var firstName = 'John';
+var age = 18;
+
+age >= 18 ? console.log(firstName + ' drinks beer.'): console.log(firstName + ' drinks juice.');
+
+var drink = age >= 18 ? 'beer': 'juice';
+console.log(drink);
+
+// Switch Statement
+var job = 'driver';
+switch (job){
+    case 'teacher':
+    case 'driver':
+    console.log(firstName + ' teaches for a living.');
+    break;
+    default:
+        console.log(firstName + ' has no job.');
+}
+
+age = 10;
+switch (true){
+    case age < 13:
+        console.log(firstName + ' is a boy.');
+        break;
+    case age >= 13 && age < 20:
+        console.log(firstName + ' is a teenager.');
+        break;
+    case age >= 20 && age < 30:
+        console.log(firstName + ' is a young man.');
+        break;
+    default:
+        console.log(firstName + ' is a man');
 }
