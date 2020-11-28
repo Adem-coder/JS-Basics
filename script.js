@@ -194,7 +194,7 @@ if (height == 23){
 }
 */
 /***************Averages and if else statments*******************/
-
+/*
 var john = (89 + 120 + 103) / 3;
 var mike = (116 + 94 + 123) / 3;
 var marry = (97 + 134 + 105) / 3;
@@ -218,3 +218,27 @@ if (john > mike){
 }else{
     console.log('There is a draw.');
 }
+*/
+
+/***************************Functions*****************************/
+
+
+function calculateAge(birthyear){
+   return 2020 - birthyear;
+}
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1980);
+var ageJane = calculateAge(1977);
+console.log(ageJohn, ageMike, ageJane);
+
+function yearsUntilRetirement(year, firstName){
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+    if(retirement > 0){
+        console.log(firstName+ ' retires in '+ retirement+" years.");
+  
+    }else{
+        console.log(firstName + ' is already retired.');
+    }
+}
+yearsUntilRetirement(1950, 'John');
