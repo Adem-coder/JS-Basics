@@ -244,7 +244,7 @@ yearsUntilRetirement(1950, 'John');
 */
 
 /*********************Function Statements and Expressions****************************/
-
+/*
 //Function declaration
 function whatDoYouDo(job, firstName){}
 
@@ -262,3 +262,52 @@ var whatDoYouDo = function(job, firstName){
     }
 }
 console.log(whatDoYouDo ('driver', 'Adem'));
+*/
+
+/***************************Arrays****************************/
+
+// Initialize new array
+var names = ['John', 'James', 'Jane', 'Mark'];
+var years = new Array (1990, 1969, 1948);
+
+console.log(names);
+console.log(names.length);
+ 
+// Mutate array data
+
+// To change the data
+names[1] = 'ben';
+console.log(names);
+ 
+// To add a data as a last element
+names[names.length]= 'Marry'; 
+console.log(names);
+
+// Different Data types
+
+var john = ['John', 'Smith', 1990, 'Teacher', false, 'driver'];
+
+// To add to the end of the array
+
+john.push('green');
+
+// To add data to the start of the array
+
+john.unshift('hello');
+console.log(john);
+
+// Remove element from the end
+
+john.pop();
+console.log(john);
+
+// Remove element fron the start
+
+john.shift();
+console.log(john);
+
+// To identify the position of an element in the array
+
+console.log(john.indexOf(1990));
+var isDriver = john.indexOf('driver') === -1 ? 'John is not a driver.':'John is a driver.';
+console.log(isDriver);
