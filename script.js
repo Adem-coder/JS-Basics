@@ -221,8 +221,7 @@ if (john > mike){
 */
 
 /***************************Functions*****************************/
-
-
+/*
 function calculateAge(birthyear){
    return 2020 - birthyear;
 }
@@ -242,3 +241,24 @@ function yearsUntilRetirement(year, firstName){
     }
 }
 yearsUntilRetirement(1950, 'John');
+*/
+
+/*********************Function Statements and Expressions****************************/
+
+//Function declaration
+function whatDoYouDo(job, firstName){}
+
+//Function Expression
+var whatDoYouDo = function(job, firstName){
+    switch(job){
+        case 'teacher':
+            return firstName + ' teaches kids how to code.';
+        case 'driver':
+            return firstName +  ' drives students to school.';
+        case 'designer':
+            return firstName + ' designs cloths for a living.';
+        default:
+            return firstName + ' does somthing eles for a living.';
+    }
+}
+console.log(whatDoYouDo ('driver', 'Adem'));
