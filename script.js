@@ -265,7 +265,7 @@ console.log(whatDoYouDo ('driver', 'Adem'));
 */
 
 /***************************Arrays****************************/
-
+/*
 // Initialize new array
 var names = ['John', 'James', 'Jane', 'Mark'];
 var years = new Array (1990, 1969, 1948);
@@ -311,3 +311,26 @@ console.log(john);
 console.log(john.indexOf(1990));
 var isDriver = john.indexOf('driver') === -1 ? 'John is not a driver.':'John is a driver.';
 console.log(isDriver);
+*/
+
+/**************************Tip Calculator**********************************/
+
+function johnBill(bill){
+   var percentage;
+   if (bill < 50){
+       percentage = .2;
+   }else if (bill >= 50 && bill < 200){
+       percentage = .15;
+   }else {
+       percentage = .1;
+   }
+   return percentage * bill;
+}
+var bills = [124, 48, 268];
+var tips = [johnBill(bills[0]),
+            johnBill(bills[1]),
+            johnBill(bills[2])];
+var finalValues = [tips[0] + bills[0],
+                   tips[1] + bills[1],
+                   tips[2] + bills[2]];
+console.log(tips, finalValues);
