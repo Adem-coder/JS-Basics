@@ -337,7 +337,7 @@ console.log(tips, finalValues);
 */
 
 /************************ Objects and Properties *****************************/
-
+/*
 // Object literal
 var john = {
     firstName: 'John',
@@ -368,3 +368,26 @@ jane.firstName = 'Jane';
 jane.birthyear = 1969;
 jane['lastName'] = 'Smith';
 console.log(jane);
+*/
+
+/**********************Objects and Methods********************************/
+
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthyear: '1990',
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: 'false',
+    calAge: function(){
+        return this.age = 2020 - this.birthyear;
+        // return 2020 - this.birthyear;
+    }
+};
+console.log(john.calAge());
+
+// To add new elements
+
+// john.age = john.calAge();
+john.calAge();
+console.log(john);
