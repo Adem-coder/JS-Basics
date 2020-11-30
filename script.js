@@ -314,7 +314,7 @@ console.log(isDriver);
 */
 
 /**************************Tip Calculator**********************************/
-
+/*
 function johnBill(bill){
    var percentage;
    if (bill < 50){
@@ -334,3 +334,37 @@ var finalValues = [tips[0] + bills[0],
                    tips[1] + bills[1],
                    tips[2] + bills[2]];
 console.log(tips, finalValues);
+*/
+
+/************************ Objects and Properties *****************************/
+
+// Object literal
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthyear: '1990',
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: 'false'
+};
+console.log(john);
+
+// methods to call the object data.
+console.log(john.firstName);
+console.log(john['lastName']);
+var x = 'birthyear';
+console.log(john[x]);
+
+// Muatating an object
+
+john.job = 'driver';
+john.isMarried = 'true';
+console.log(john);
+
+// New Object syntax
+
+var jane = new Object()
+jane.firstName = 'Jane';
+jane.birthyear = 1969;
+jane['lastName'] = 'Smith';
+console.log(jane);
