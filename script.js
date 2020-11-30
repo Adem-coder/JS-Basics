@@ -64,7 +64,7 @@ console.log(typeof ageJohn);
  */
 
 
- /********************** Operator Precedence ************************/
+/********************** Operator Precedence ************************/
 /*
  var now = 2018;
  var yearJohn = 1989;
@@ -371,7 +371,7 @@ console.log(jane);
 */
 
 /**********************Objects and Methods********************************/
-
+/*
 var john = {
     firstName: 'John',
     lastName: 'Smith',
@@ -391,3 +391,34 @@ console.log(john.calAge());
 // john.age = john.calAge();
 john.calAge();
 console.log(john);
+*/
+
+/**************************BMI Calculator(Object)*************************************/
+
+var john = {
+    fullName: 'John Smith',
+    mass: 78,
+    height: 1.8,
+    calBmi: function () {
+        return this.bmi = Math.round(this.mass / (this.height * this.height));
+    }
+};
+
+var mark = {
+    fullName: 'Mark James',
+    mass: 68,
+    height: 1.75,
+    calBmi: function () {
+        return this.bmi = Math.round(this.mass / (this.height * this.height));
+    }
+};
+
+if (john.calBmi() > mark.calBmi()) {
+    console.log(john.fullName + ' has a ' + john.bmi + ' BMI.');
+} else if (john.calBmi() > mark.calBmi()) {
+    console.log(mark.fullName + ' has a ' + mark.bmi + ' BMI.');
+
+} else {
+    console.log('Both Mark and John have the same BMI.');
+}
+console.log(mark.bmi, john.bmi);
