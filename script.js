@@ -394,7 +394,7 @@ console.log(john);
 */
 
 /**************************BMI Calculator(Object)*************************************/
-
+/*
 var john = {
     fullName: 'John Smith',
     mass: 78,
@@ -422,3 +422,48 @@ if (john.calBmi() > mark.calBmi()) {
     console.log('Both Mark and John have the same BMI.');
 }
 console.log(mark.bmi, john.bmi);
+*/
+
+/********************************Loops and Iteration*************************************/
+
+// for loop
+
+for (var i=0; i < 10; i++){
+    console.log(i);
+}
+for (var i = 1; i <=20; i += 2){
+    console.log(i);
+}
+
+var john = ['John', 'Smith', 1990, 'Teacher', false, 'driver'];
+for (var i = 0; i < john.length; i++){
+    console.log(john[i]);
+}
+
+// while loop
+
+var i = 0;
+while(i < john.length){
+console.log(john[i]);
+i++;
+}
+
+// Continue and break statements
+
+var john = ['John', 'Smith', 1990, 'Teacher', false, 'driver'];
+
+for (var i = 0; i< john.length; i++){
+    if(typeof john[i] !== 'string') continue;
+console.log(john[i]);
+}
+
+for (var i = 0; i< john.length; i++){
+    if(typeof john[i] !== 'string') break;
+console.log(john[i]);
+}
+
+// Looping Backwards
+
+for(var i = john.length - 1; i >= 0; i--){
+    console.log(john[i]);
+}
